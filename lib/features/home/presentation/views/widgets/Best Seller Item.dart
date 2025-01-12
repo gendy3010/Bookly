@@ -23,6 +23,7 @@ class BestSellerItem extends StatelessWidget {
               child: Container(
                 height: MediaQuery.of(context).size.height * 0.3 ,
                 decoration: BoxDecoration(
+                  color: Colors.orange,
                     borderRadius: BorderRadius.circular(8),
                     image: DecorationImage(
                         fit: BoxFit.fill,
