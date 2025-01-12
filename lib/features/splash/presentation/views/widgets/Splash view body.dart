@@ -1,4 +1,5 @@
 
+import 'package:bookly_app/core/Utils/App%20Router.dart';
 import 'package:bookly_app/features/home/presentation/views/HomeViews.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -73,9 +74,7 @@ class _SplashViewbodyState extends State<SplashViewbody>
         //     // calculations
         //     transition: Transition.fade,
         //     duration: kTranstionDuration);
-            Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context)=> HomeView()));
+            GoRouter.of(context).push(AppRouter.kHomeView);
       },
     );
   }
