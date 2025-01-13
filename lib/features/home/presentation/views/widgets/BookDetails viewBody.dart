@@ -23,53 +23,53 @@ class BookDetailsViewBody extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  CustomBookDetailsAppBar(),
-                  BookDetailsSection(),
+                  const CustomBookDetailsAppBar(),
+                  const BookDetailsSection(),
                   const SizedBox(
                     height: 18,
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: width * .17),
-                    child: CustomBookImage(),
+                    child: const CustomBookImage(),
                   ),
-                  Expanded(
-                    child: const SizedBox(
+                  const Expanded(
+                    child: SizedBox(
                       height: 40,
                     ),
                   ),
-                  Text(
+                  const Text(
                     'The Jungle Book',
                     style: Styles.textStyle30,
                   ),
                   const SizedBox(
                     height: 6,
                   ),
-                  Text(
+                  const Text(
                     'Rudyard Kipling',
                     style: Styles.textStyle18,
                   ),
-                  BookRating(
+                  const BookRating(
                     mainAxisAlignment: MainAxisAlignment.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
-                  BookActions(),
-                  SizedBox(
+                  const BookActions(),
+                  const SizedBox(
                     height: 18,
                   ),
-                  Align(
+                  const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'You can also like',
                       style: Styles.textStyle15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
-                  SimilarBooksListView(),
-                  SizedBox(
+                  const SimilarBooksListView(),
+                  const SizedBox(
                     height: 30,
                   )
                 ],

@@ -1,5 +1,7 @@
+import 'package:bookly_app/core/Utils/App%20Router.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../core/Utils/assets.dart';
 
@@ -17,7 +19,9 @@ class FeaturedAppBar extends StatelessWidget {
         children: [
           Image.asset(AssetsData.logo,height: 18,),
           const Spacer(),
-          IconButton(onPressed: (){},
+          IconButton(onPressed: (){
+            GoRouter.of(context).push(AppRouter.kSearchView);
+          },
               icon: Icon(Icons.search,size: 30,)),
         ],
       ),

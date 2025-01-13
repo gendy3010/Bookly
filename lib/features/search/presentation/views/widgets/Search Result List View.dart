@@ -1,17 +1,14 @@
-
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
-import 'Best Seller Item.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+import '../../../../home/presentation/views/widgets/Best Seller Item.dart';
+
+class SearchResultListview extends StatelessWidget {
+  const SearchResultListview({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
         padding: EdgeInsets.only(left: 10,right: 10),
         itemCount: 16,
         itemBuilder: (context,index){return  Padding(
