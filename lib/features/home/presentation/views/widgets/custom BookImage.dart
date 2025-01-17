@@ -8,11 +8,11 @@ final String imageUrl;
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(16),
+      borderRadius: BorderRadius.circular(18),
       child: AspectRatio(
-        aspectRatio: 2.8/4,
+        aspectRatio: 2.9/4,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 5),
+          padding: const EdgeInsets.symmetric(horizontal: 8),
           child: CachedNetworkImage(
             fit: BoxFit.fill,
             imageUrl: imageUrl,

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
 
-import '../../../../home/presentation/views/widgets/Best Seller Item.dart';
 
 class SearchResultListview extends StatelessWidget {
   const SearchResultListview({super.key});
@@ -13,7 +12,7 @@ class SearchResultListview extends StatelessWidget {
         itemCount: 16,
         itemBuilder: (context,index){return  Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-          child: BestSellerItem(),
+          child:Container(),
         );});
   }
 }
